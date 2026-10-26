@@ -29,3 +29,15 @@ The cheat is free to use but if you respect me and my work and you want to suppo
 
 
 [![image](https://github.com/jokeri2222/KaHack/assets/110989057/fb87a570-186d-4f37-9065-6eb1907e33ae)](https://www.paypal.com/donate/?hosted_button_id=DUXNZVDCDAQ8S)
+
+## Clipa — editor de vídeo (novo)
+
+Além do userscript, este repositório agora inclui o **Clipa**, um editor de vídeo completo no navegador inspirado nos apps de edição mobile (linha do tempo com faixas, cortes, textos animados, filtros, áudio e exportação):
+
+```bash
+cd clipa
+python3 -m http.server 5173
+# abra http://localhost:5173
+```
+
+Detalhes, atalhos e limitações: [clipa/README.md](clipa/README.md).

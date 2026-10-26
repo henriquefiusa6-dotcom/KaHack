@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Clipa — editor de vídeo no navegador</title>
+  <meta name="description" content="Editor de vídeo online inspirado nos apps de edição mobile: linha do tempo, cortes, textos animados, filtros e exportação direto no navegador." />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='24' fill='%237c5cff'/%3E%3Cpath d='M38 28l30 22-30 22z' fill='white'/%3E%3C/svg%3E" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">
+      <span class="logo">◆</span>
+      <span class="brand-name">Clipa</span>
+      <span class="brand-tag">editor de vídeo</span>
+    </div>
+    <input id="projectName" class="project-name" type="text" value="Meu projeto" spellcheck="false" aria-label="Nome do projeto" />
+    <div class="top-actions">
+      <button id="undoBtn" class="icon-btn" title="Desfazer (Ctrl+Z)">↶</button>
+      <button id="redoBtn" class="icon-btn" title="Refazer (Ctrl+Shift+Z)">↷</button>
+      <span class="top-divider"></span>
+      <button id="importBtn" class="btn ghost">Importar</button>
+      <button id="helpBtn" class="icon-btn" title="Ajuda">?</button>
+      <button id="exportBtn" class="btn primary">Exportar</button>
+    </div>
+  </header>
+
+  <main class="workspace">
+    <aside id="assets" class="left-panel"></aside>
+    <section class="center">
+      <div id="preview" class="preview"></div>
+      <div id="timeline" class="timeline"></div>
+    </section>
+    <aside id="panel" class="right-panel"></aside>
+  </main>
+
+  <div id="toasts" class="toasts"></div>
+
+  <script type="module" src="js/app.js"></script>
+  <noscript>Este editor precisa de JavaScript habilitado.</noscript>
+</body>
+</html>
