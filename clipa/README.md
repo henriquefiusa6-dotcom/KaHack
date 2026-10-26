@@ -4,6 +4,10 @@ Uma alternativa livre, inspirada nos editores de vídeo mobile (CapCut e similar
 
 ![fluxo](https://img.shields.io/badge/100%25-local-7c5cff) ![sem dependências](https://img.shields.io/badge/dependências-0-22d3ee)
 
+![Quadro renderizado pelo Clipa](docs/preview.png)
+
+*Quadro gerado pelo compositor do Clipa (imagem de fundo + título animado + legenda com fundo arredondado).*
+
 ## Como rodar
 
 O app usa **módulos ES**, então precisa ser servido por HTTP (abrir o `index.html` com `file://` não funciona).
