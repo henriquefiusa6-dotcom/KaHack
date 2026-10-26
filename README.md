@@ -34,6 +34,8 @@ The cheat is free to use but if you respect me and my work and you want to suppo
 
 Além do userscript, este repositório agora inclui o **Clipa**, um editor de vídeo completo no navegador inspirado nos apps de edição mobile (linha do tempo com faixas, cortes, textos animados, filtros, áudio e exportação):
 
+Para usar sem instalar nada, baixe **[clipa/clipa-standalone.html](clipa/clipa-standalone.html)** e abra no navegador. Ou rode com servidor:
+
 ```bash
 cd clipa
 python3 -m http.server 5173

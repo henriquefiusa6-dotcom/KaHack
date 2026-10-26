@@ -8,9 +8,20 @@ Uma alternativa livre, inspirada nos editores de vídeo mobile (CapCut e similar
 
 *Quadro gerado pelo compositor do Clipa (imagem de fundo + título animado + legenda com fundo arredondado).*
 
-## Como rodar
+## Abrir sem servidor (mais rápido)
 
-O app usa **módulos ES**, então precisa ser servido por HTTP (abrir o `index.html` com `file://` não funciona).
+Baixe o arquivo **[`clipa-standalone.html`](clipa-standalone.html)** e abra com dois cliques (ou envie para o celular e abra no navegador). Ele já contém todo o CSS e o JavaScript embutidos — funciona direto do disco, sem instalar nada e sem internet.
+
+Para regenerá-lo depois de mexer no código:
+
+```bash
+cd clipa
+./build-standalone.sh   # precisa de Node.js 18+
+```
+
+## Como rodar com servidor
+
+O app usa **módulos ES** na versão de desenvolvimento, então precisa ser servido por HTTP (abrir o `index.html` com `file://` não funciona nesse modo).
 
 ```bash
 cd clipa
@@ -92,6 +103,8 @@ A exportação gera **WebM (VP9/VP8 + Opus)** na maioria dos navegadores (ou MP4
 ```
 clipa/
 ├── index.html
+├── clipa-standalone.html   # build de arquivo único (abre com 2 cliques)
+├── build-standalone.sh     # regenera o arquivo único com esbuild
 ├── css/styles.css
 └── js/
     ├── app.js        # bootstrap, topbar, atalhos, toasts, drop global
